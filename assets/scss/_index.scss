@@ -1,0 +1,45 @@
+body {
+  border: 0;
+  margin: 0;
+  background-image:
+    linear-gradient(
+      to top,
+      $color_accent_1,
+      $color_accent_1,
+      rgba($color_accent_1, 0.9),
+      rgba($color_accent_1, 0.8),
+    ),
+    url(../img/assets_bg.png);
+  background-size: 110% 200px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: $color_accent_1;
+
+  @include breakpoint($lg_screen) {
+    background-size: 130% 400px;
+  }
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  font-family: $font2;
+  color: $color_text;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h5 {
+  margin: 0;
+  padding: 0;
+}

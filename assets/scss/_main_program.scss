@@ -1,0 +1,44 @@
+.main-program {
+  background-image: url(../img/bg_asset.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // border: 1px solid red;
+
+  .container {
+    padding: 0;
+  }
+
+  .header {
+    position: relative;
+
+    h2 {
+      color: $color_white;
+    }
+
+    .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 100px;
+      border-bottom: 3px solid $color_primary;
+    }
+  }
+
+  .program-list {
+    width: 100%;
+
+    .item {
+      background-color: rgba(255, 255, 255, 0.137);
+
+      h4 {
+        color: $color_primary;
+        font-family: $font1;
+      }
+
+      p {
+        color: $color_accent_1;
+        font-family: $font3;
+        font-size: 18px;
+      }
+    }
+  }
+}
