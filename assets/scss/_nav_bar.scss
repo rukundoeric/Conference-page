@@ -1,7 +1,10 @@
 .nav-bar {
-  background-color: $color_white;
   clear: both;
-  box-shadow: 7px 0 9px 0 rgba(168, 168, 168, 0.76);
+
+  @include breakpoint($lg_screen) {
+    background-color: $color_white;
+    box-shadow: 7px 0 9px 0 rgba(168, 168, 168, 0.76);
+  }
 
   .status-bar {
     background-color: $color_secondary;
@@ -24,6 +27,21 @@
   }
 
   .nav-links {
+    display: flex;
+    position: relative;
+
+    @include breakpoint($sm_screen) {
+      background-color: $color_white;
+      width: 300px;
+      top: 40px;
+      padding: 20px 0;
+      margin-top: 20px;
+      display: none;
+      position: absolute;
+      z-index: 2;
+      box-shadow: 1px 0 5px 0 rgb(167, 167, 167);
+    }
+
     .about {
       color: $color_primary;
     }
@@ -41,6 +59,12 @@
     }
   }
 
+  .nav-links.active {
+    @include breakpoint($sm_screen) {
+      display: flex;
+    }
+  }
+
   .logo {
     img {
       height: 40px;
@@ -48,17 +72,17 @@
   }
 
   .nav-button-icon {
-    width: 35px;
+    width: 30px;
     cursor: pointer;
 
     &::after,
     &::before,
     .btn-cont {
-      background-color: $color_secondary_1;
+      background-color: $color_text;
       // border-radius: 10px;
       content: "";
       display: block;
-      height: 7px;
+      height: 4px;
       margin: 6px 0;
     }
 

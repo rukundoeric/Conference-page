@@ -11,6 +11,7 @@ $font1: cocogoose, sans-serif;
 $font2: lato-bold, sans-serif;
 $font3: lato_regular, sans-serif;
 
-$lg_screen: "(min-width: 768px)";
+$lg_screen: "(min-width: 992px)";
+$md_screen: "(max-width: 992px)";
 $sm_screen: "(max-width: 767px)";
-$xs_screen: "(max-width: 420px)";
+$xs_screen: "(max-width: 576px)";

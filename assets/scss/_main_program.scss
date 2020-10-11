@@ -31,6 +31,14 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
+    @include breakpoint($md_screen) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint($sm_screen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     .item {
       background-color: rgba(255, 255, 255, 0.103);
 
@@ -48,6 +56,13 @@
         color: $color_accent_1;
         font-family: $font3;
         font-size: 15px;
+      }
+
+      .row {
+        @include breakpoint($xs_screen) {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
       }
     }
   }

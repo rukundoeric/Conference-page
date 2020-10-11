@@ -1,6 +1,7 @@
 .banner {
   position: relative;
-  height: calc(100vh - 60px);
+  min-height: 600px;
+  overflow-x: hidden;
 
   .container {
     padding: 0;
@@ -10,6 +11,10 @@
     font-family: $font3;
     font-size: 24px;
     color: $color_primary;
+
+    @include breakpoint($sm_screen) {
+      font-size: 15px;
+    }
   }
 
   .cons-title {
@@ -19,12 +24,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to bottom right, $color_primary 20%, #f5160607, $color_primary 50%), url(../img/image3.png);
+
+    @include breakpoint($sm_screen) {
+      font-size: 25px;
+    }
   }
 
   .cons-desc {
     border: 6px solid $color_white;
     width: 600px;
     background-color: $color_accent_1;
+
+    @include breakpoint($sm_screen) {
+      width: 100%;
+    }
 
     .cons-description {
       font-family: $font2;
@@ -39,23 +52,36 @@
     line-height: 30px;
     font-family: $font1;
     color: $color_text;
+
+    @include breakpoint($sm_screen) {
+      font-size: 20px;
+    }
   }
 
   .cons-location {
     font-family: $font1;
     color: $color_text;
     font-size: 27px;
+
+    @include breakpoint($sm_screen) {
+      font-size: 16px;
+    }
   }
 }
 
 .jenn-con1 {
   position: absolute;
-  top: 43%;
-  left: 44%;
+  top: 50%;
+  left: 48%;
   z-index: -1;
 
+  @include breakpoint($md_screen) {
+    top: 35%;
+    left: 60%;
+  }
+
   img {
-    height: 320px;
+    height: 150px;
   }
 }
 
@@ -64,6 +90,11 @@
   top: 70%;
   left: 75%;
   z-index: -1;
+
+  @include breakpoint($md_screen) {
+    top: 0%;
+    left: 60%;
+  }
 
   img {
     height: 100px;
@@ -152,6 +183,11 @@
   top: 20%;
   left: 70%;
   z-index: -1;
+
+  @include breakpoint($md_screen) {
+    top: 70%;
+    left: 60%;
+  }
 
   img {
     height: 50px;
