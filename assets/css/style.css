@@ -283,4 +283,40 @@ h5 {
       font-size: 14px;
       font-family: lato_regular, sans-serif; }
 
+.partner {
+  background-color: #272a31; }
+  .partner .header {
+    position: relative; }
+    .partner .header .title {
+      color: #d3d3d3;
+      font-size: 20px;
+      font-family: cocogoose, sans-serif;
+      font-weight: 700; }
+    .partner .header .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 30px;
+      border-bottom: 3px solid #ec5242; }
+  .partner .p-logo {
+    height: 50px; }
+
+footer {
+  height: 200px; }
+  footer .container {
+    height: 100%; }
+    footer .container .row {
+      height: 100%; }
+  footer .logo {
+    height: 100%; }
+    footer .logo img {
+      height: 60px; }
+  footer .info h5 {
+    font-size: 16px;
+    font-family: cocogoose, sans-serif;
+    font-weight: 700; }
+  footer .info p {
+    color: #5e5e5e;
+    font-family: cocogoose, sans-serif;
+    font-size: 15px; }
+
 /*# sourceMappingURL=style.css.map */

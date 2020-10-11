@@ -60,3 +60,29 @@
     }
   }
 }
+
+.partner {
+  background-color: $color_secondary;
+
+  .header {
+    position: relative;
+
+    .title {
+      color: $color_accent;
+      font-size: 20px;
+      font-family: $font1;
+      font-weight: 700;
+    }
+
+    .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 30px;
+      border-bottom: 3px solid $color_primary;
+    }
+  }
+
+  .p-logo {
+    height: 50px;
+  }
+}
