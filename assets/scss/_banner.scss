@@ -1,6 +1,4 @@
 .banner {
-  // width: 100%;
-  // border: 1px solid red;
   position: relative;
   height: calc(100vh - 60px);
 
@@ -20,7 +18,7 @@
     font-size: 50px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to bottom right, #f51706 20%, #f5160607, #f51706 50%), url(../img/image3.png);
+    background-image: linear-gradient(to bottom right, $color_primary 20%, #f5160607, $color_primary 50%), url(../img/image3.png);
   }
 
   .cons-desc {
@@ -52,8 +50,8 @@
 
 .jenn-con1 {
   position: absolute;
-  top: 38%;
-  left: 45%;
+  top: 43%;
+  left: 44%;
   z-index: -1;
 
   img {

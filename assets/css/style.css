@@ -94,7 +94,7 @@ h5 {
     font-size: 50px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to bottom right, #f51706 20%, #f5160607, #f51706 50%), url(../img/image3.png); }
+    background-image: linear-gradient(to bottom right, #ec5242 20%, #f5160607, #ec5242 50%), url(../img/image3.png); }
   .banner .cons-desc {
     border: 6px solid #fff;
     width: 600px;
@@ -116,8 +116,8 @@ h5 {
 
 .jenn-con1 {
   position: absolute;
-  top: 38%;
-  left: 45%;
+  top: 43%;
+  left: 44%;
   z-index: -1; }
   .jenn-con1 img {
     height: 320px; }
@@ -219,22 +219,68 @@ h5 {
   .main-program .header {
     position: relative; }
     .main-program .header h2 {
-      color: #fff; }
+      color: #d3d3d3;
+      font-size: 20px;
+      font-family: cocogoose, sans-serif;
+      font-weight: 700; }
     .main-program .header .small-line {
       justify-self: center;
       margin: auto;
       width: 100px;
       border-bottom: 3px solid #ec5242; }
   .main-program .program-list {
-    width: 100%; }
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
     .main-program .program-list .item {
-      background-color: rgba(255, 255, 255, 0.137); }
+      background-color: rgba(255, 255, 255, 0.103); }
+      .main-program .program-list .item .icon {
+        height: 50px; }
       .main-program .program-list .item h4 {
         color: #ec5242;
-        font-family: cocogoose, sans-serif; }
+        font-family: cocogoose, sans-serif;
+        font-size: 18px; }
       .main-program .program-list .item p {
         color: #f7f7f7;
         font-family: lato_regular, sans-serif;
-        font-size: 18px; }
+        font-size: 15px; }
+
+.contestants .header {
+  position: relative; }
+  .contestants .header h2 {
+    color: #272a31;
+    font-size: 20px;
+    font-family: cocogoose, sans-serif;
+    font-weight: 700; }
+  .contestants .header .small-line {
+    justify-self: center;
+    margin: auto;
+    width: 100px;
+    border-bottom: 3px solid #ec5242; }
+.contestants .item {
+  box-sizing: border-box;
+  padding: 0; }
+  .contestants .item .image {
+    width: 150px !important; }
+    .contestants .item .image img:nth-of-type(1) {
+      width: 70px;
+      position: absolute;
+      z-index: -1; }
+    .contestants .item .image img:nth-of-type(2) {
+      width: 120px;
+      margin-left: 20px;
+      margin-top: 20px; }
+  .contestants .item .cont-info {
+    clear: both; }
+    .contestants .item .cont-info h2 {
+      font-family: lato-bold, sans-serif;
+      color: #272a31;
+      font-size: 20px; }
+    .contestants .item .cont-info .small_line {
+      width: 50px;
+      border-bottom: 2px solid #bbb; }
+    .contestants .item .cont-info p {
+      font-size: 14px;
+      font-family: lato_regular, sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

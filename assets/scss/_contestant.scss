@@ -1,0 +1,62 @@
+.contestants {
+  .header {
+    position: relative;
+
+    h2 {
+      color: $color_secondary;
+      font-size: 20px;
+      font-family: $font1;
+      font-weight: 700;
+    }
+
+    .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 100px;
+      border-bottom: 3px solid $color_primary;
+    }
+  }
+
+  .item {
+    box-sizing: border-box;
+    padding: 0;
+
+    .image {
+      width: 150px !important;
+
+      img {
+        &:nth-of-type(1) {
+          width: 70px;
+          position: absolute;
+          z-index: -1;
+        }
+
+        &:nth-of-type(2) {
+          width: 120px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .cont-info {
+      clear: both;
+
+      h2 {
+        font-family: $font2;
+        color: $color_secondary;
+        font-size: 20px;
+      }
+
+      .small_line {
+        width: 50px;
+        border-bottom: 2px solid $color_border;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: $font3;
+      }
+    }
+  }
+}

@@ -12,7 +12,10 @@
     position: relative;
 
     h2 {
-      color: $color_white;
+      color: $color_accent;
+      font-size: 20px;
+      font-family: $font1;
+      font-weight: 700;
     }
 
     .small-line {
@@ -25,19 +28,26 @@
 
   .program-list {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
     .item {
-      background-color: rgba(255, 255, 255, 0.137);
+      background-color: rgba(255, 255, 255, 0.103);
+
+      .icon {
+        height: 50px;
+      }
 
       h4 {
         color: $color_primary;
         font-family: $font1;
+        font-size: 18px;
       }
 
       p {
         color: $color_accent_1;
         font-family: $font3;
-        font-size: 18px;
+        font-size: 15px;
       }
     }
   }
