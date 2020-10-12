@@ -1,9 +1,12 @@
 .nav-bar {
   clear: both;
+  background-color: transparent;
+  background-color: $color_white;
+  box-shadow: 7px 0 9px 0 rgba(168, 168, 168, 0.76);
 
-  @include breakpoint($lg_screen) {
-    background-color: $color_white;
-    box-shadow: 7px 0 9px 0 rgba(168, 168, 168, 0.76);
+  @include breakpoint($sm_screen) {
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .status-bar {

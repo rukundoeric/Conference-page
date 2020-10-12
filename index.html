@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
   <title>Document</title>
 </head>
+
 <body class="bootstrap-override">
   <nav class="nav-bar">
     <div class="status-bar pb-2 d-none d-md-block">
@@ -28,7 +29,10 @@
           <div class="btn-cont"></div>
         </div>
         <div id="nav-links" class="nav-links">
-          <ul class="d-flex flex-column flex-lg-row">
+          <ul class="d-flex flex-column flex-md-row">
+            <li class="m-none my-2 my-md-none ml-md-5 py-2 px-2">
+              <a class="about" href="index.html">Home</a>
+            </li>
             <li class="m-none my-2 my-md-none ml-md-5 py-2 px-3">
               <a class="about" href="about.html">About</a>
             </li>
@@ -73,61 +77,64 @@
         <div class="small-line pt-3"></div>
       </div>
       <div class="program-list p-3">
-        <div class="item d-flex flex-md-column justify-content-between align-items-center text-lg-center p-3 m-1">
+        <div class="item d-flex flex-md-column justify-content-between align-items-center text-md-center p-3 m-1">
           <div class="row d-sm-flex flex-sm-row">
-            <div class="col-lg-12 col-sm-5 col-xs-5 d-flex flex-md-column">
+            <div class="col-md-12 col-sm-5 col-xs-5 d-flex flex-md-column">
               <span class="px-1"><img class="icon" src="./assets/img/pro_1.png" alt="icon" /></span>
               <h4 class="px-2 mt-3">Speach</h4>
             </div>
-            <div class="col-lg-12 col-sm-7 col-xs-7 pl-2">
+            <div class="col-md-12 col-sm-7 col-xs-7 pl-2">
               <p>Speech by the main sponsor of the competition</p>
             </div>
           </div>
         </div>
-        <div class="item d-flex flex-md-column justify-content-between align-items-center text-lg-center p-3 m-1">
+        <div class="item d-flex flex-md-column justify-content-between align-items-center text-md-center p-3 m-1">
           <div class="row">
-            <div class="col-lg-12 col-sm-5 d-flex flex-md-column">
+            <div class="col-md-12 col-sm-5 d-flex flex-md-column">
               <span class="px-1"><img class="icon" src="./assets/img/pro_4.png" alt="icon" /></span>
               <h4 class="px-2 mt-3">Show</h4>
-            </div> 
-            <div class="col-lg-12 col-sm-7 pl-2">
+            </div>
+            <div class="col-md-12 col-sm-7 pl-2">
               <p>the demonstration of the participants of the competition</p>
             </div>
           </div>
         </div>
-        <div class="item d-flex flex-md-column justify-content-between align-items-center text-lg-center p-3 m-1">
+        <div class="item d-flex flex-md-column justify-content-between align-items-center text-md-center p-3 m-1">
           <div class="row">
-            <div class="col-lg-12 col-sm-5 d-flex flex-md-column">
+            <div class="col-md-12 col-sm-5 d-flex flex-md-column">
               <span class="px-1"><img class="icon" src="./assets/img/pro_2.png" alt="icon" /></span>
               <h4 class="px-2 mt-3">Singing</h4>
             </div>
-            <div class="col-lg-12 col-sm-7 pl-2">
+            <div class="col-md-12 col-sm-7 pl-2">
               <p>singing performance for each contestant of the competition.</p>
             </div>
           </div>
         </div>
-        <div class="item d-flex flex-md-column justify-content-between align-items-center text-lg-center p-3 m-1">
+        <div class="item d-flex flex-md-column justify-content-between align-items-center text-md-center p-3 m-1">
           <div class="row">
-            <div class="col-lg-12 col-sm-5 d-flex flex-md-column">
+            <div class="col-md-12 col-sm-5 d-flex flex-md-column">
               <span class="px-1"><img class="icon" src="./assets/img/pro_1.png" alt="icon" /></span>
               <h4 class="px-2 mt-3">Speach</h4>
             </div>
-            <div class="col-lg-12 col-sm-7 pl-2">
+            <div class="col-md-12 col-sm-7 pl-2">
               <p>Remarks by the Minister of Culture and Sports</p>
             </div>
           </div>
         </div>
-        <div class="item d-flex flex-md-column justify-content-between align-items-center text-lg-center p-3 m-1">
+        <div class="item d-flex flex-md-column justify-content-between align-items-center text-md-center p-3 m-1">
           <div class="row">
-            <div class="col-lg-12 col-sm-5 d-flex flex-md-column">
+            <div class="col-md-12 col-sm-5 d-flex flex-md-column">
               <span class="px-1"><img class="icon" src="./assets/img/pro_3.png" alt="icon" /></span>
               <h4 class="px-2 mt-3">Prize</h4>
             </div>
-            <div class="col-lg-12 col-sm-7 pl-2">
+            <div class="col-md-12 col-sm-7 pl-2">
               <p>Announcing and award prize to the winner of the competition.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="d-flex d-md-none justify-content-center align-items-center">
+        <a class="buy-ticket px-5 mx-3 py-4 text-center" href="ticket.html">Buy Ticket</a>
       </div>
     </div>
   </div>
@@ -142,26 +149,29 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 item d-flex my-2 p-2">
           <div class="image">
-            <img src="./assets/img/art_br.png" alt="image" />
+            <img class="d-none d-md-block" src="./assets/img/art_br.png" alt="image" />
+            <img class="d-md-none" src="./assets/img/art_br_2.png" alt="image" />
             <img src="./assets/img/art1.jpg" alt="image" />
           </div>
           <div class="d-flex flex-column cont-info p-3">
             <h2>The ben</h2>
+            <small>RnB and Pop artist</small>
             <div class="small_line my-2"></div>
             <p class="description">
-              Benjamin Mugisha (born 9 January 1987 in Kampala, Uganda to Jean
-              Mbonimpa and Esther Mbabazi) better known by his stage name, The
+              Benjamin Mugisha (born 9 January 1987 in Kampala, Uganda) better known by his stage name, The
               Ben, is a Rwandan singer-songwriter
             </p>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 item d-flex my-2 p-2">
           <div class="image">
-            <img src="./assets/img/art_br.png" alt="image" />
+            <img class="d-none d-md-block" src="./assets/img/art_br.png" alt="image" />
+            <img class="d-md-none" src="./assets/img/art_br_2.png" alt="image" />
             <img src="./assets/img/art2.jpeg" alt="image" />
           </div>
           <div class="d-flex flex-column cont-info p-3">
             <h2>Meddy</h2>
+            <small>RnB and Pop artist</small>
             <div class="small_line my-2"></div>
             <p class="description">
               Ngabo Médard Jobert (born August 7, 1989), known professionally
@@ -172,11 +182,13 @@
         </div>
         <div class="col-lg-6 col-md-6 item d-flex my-2 p-2">
           <div class="image">
-            <img src="./assets/img/art_br.png" alt="image" />
+            <img class="d-none d-md-block" src="./assets/img/art_br.png" alt="image" />
+            <img class="d-md-none" src="./assets/img/art_br_2.png" alt="image" />
             <img src="./assets/img/art3.jpg" alt="image" />
           </div>
           <div class="d-flex flex-column cont-info p-3">
             <h2>Knowless</h2>
+            <small>RnB artist</small>
             <div class="small_line my-2"></div>
             <p class="description">
               Knowless (born Jeanne d'Arc Ingabire Butera on 2 October 1990)
@@ -186,11 +198,13 @@
         </div>
         <div class="col-lg-6 col-md-6 item d-flex my-2 p-2">
           <div class="image">
-            <img src="./assets/img/art_br.png" alt="image" />
+            <img class="d-none d-md-block" src="./assets/img/art_br.png" alt="image" />
+            <img class="d-md-none" src="./assets/img/art_br_2.png" alt="image" />
             <img src="./assets/img/art4.jpg" alt="image" />
           </div>
           <div class="d-flex flex-column cont-info p-3">
             <h2>Kitoko</h2>
+            <small>Afrobeats and hip-hop artist</small>
             <div class="small_line my-2"></div>
             <p class="description">
               Kitoko, born Patrick Bibarwa, is a Rwandan Afrobeats and hip-hop
@@ -200,11 +214,13 @@
         </div>
         <div class="col-lg-6 col-md-6 item d-flex my-2 p-2">
           <div class="image">
-            <img src="./assets/img/art_br.png" alt="image" />
+            <img class="d-none d-md-block" src="./assets/img/art_br.png" alt="image" />
+            <img class="d-md-none" src="./assets/img/art_br_2.png" alt="image" />
             <img src="./assets/img/art5.jpg" alt="image" />
           </div>
           <div class="d-flex flex-column cont-info p-3">
             <h2>Tom Close</h2>
+            <small>Recording artist</small>
             <div class="small_line my-2"></div>
             <p class="description">
               Tom Close is a Rwandan recording artist and professional
@@ -214,11 +230,13 @@
         </div>
         <div class="col-lg-6 col-md-6 item d-flex my-2 p-2">
           <div class="image">
-            <img src="./assets/img/art_br.png" alt="image" />
+            <img class="d-none d-md-block" src="./assets/img/art_br.png" alt="image" />
+            <img class="d-md-none" src="./assets/img/art_br_2.png" alt="image" />
             <img src="./assets/img/art6.jpeg" alt="image" />
           </div>
           <div class="d-flex flex-column cont-info p-3">
             <h2>Diamond Platnumz</h2>
+            <small>bongo flava recording artist</small>
             <div class="small_line my-2"></div>
             <p class="description">
               Nasibu Abdul Juma Issack, popularly known by his stage name
@@ -248,7 +266,7 @@
   <div class="jenn-con2">
     <img src="./assets/img/asset8.png" alt="image" />
   </div>
-  <div class="jenn-con3">
+  <div class="jenn-con3 d-none d-lg-block">
     <img src="./assets/img/asset9.png" alt="image" />
   </div>
   <div class="jenn-con4">

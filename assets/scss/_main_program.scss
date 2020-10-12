@@ -2,7 +2,6 @@
   background-image: url(../img/bg_asset.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  // border: 1px solid red;
 
   .container {
     padding: 0;
@@ -49,7 +48,7 @@
       h4 {
         color: $color_primary;
         font-family: $font1;
-        font-size: 18px;
+        font-size: 15px;
       }
 
       p {
@@ -65,5 +64,12 @@
         }
       }
     }
+  }
+
+  .buy-ticket {
+    text-transform: uppercase;
+    background-color: $color_primary;
+    color: $color_white;
+    width: 100%;
   }
 }

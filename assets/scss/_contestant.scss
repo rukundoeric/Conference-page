@@ -32,6 +32,12 @@
         }
 
         &:nth-of-type(2) {
+          width: 70px;
+          position: absolute;
+          z-index: -1;
+        }
+
+        &:nth-of-type(3) {
           width: 120px;
           margin-left: 20px;
           margin-top: 20px;
@@ -49,12 +55,16 @@
       }
 
       .small_line {
-        width: 50px;
+        width: 20px;
         border-bottom: 2px solid $color_border;
       }
 
+      small {
+        color: $color_primary;
+      }
+
       p {
-        font-size: 13px;
+        font-size: 12px;
         font-family: $font2;
         color: $color_text;
       }

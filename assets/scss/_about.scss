@@ -1,0 +1,175 @@
+.about {
+  //position: relative;
+
+  .banner {
+    .cons-title {
+      background-image: linear-gradient(to bottom right,
+          $color_primary 100%,
+          #f5160607,
+          $color_primary 50%),
+        url(../img/image3.png);
+    }
+  }
+
+  .cons-desc {
+    background-color: $color_white;
+    border-color: $color_accent;
+  }
+
+  .past-competiotions {
+    background-color: $color_white;
+
+    .header {
+      position: relative;
+
+      h2 {
+        color: $color_secondary;
+        font-size: 20px;
+        font-family: $font2;
+        font-weight: 700;
+      }
+
+      .small-line {
+        justify-self: center;
+        margin: auto;
+        width: 100px;
+        border-bottom: 3px solid $color_primary;
+      }
+    }
+
+    .list {
+      .item {
+        box-sizing: border-box;
+        width: 350px;
+        height: 200px;
+        padding: 2px;
+
+        @include breakpoint($sm_screen) {
+          width: 100%;
+        }
+
+        h2 {
+          color: $color_white;
+        }
+
+        p {
+          color: $color_white;
+        }
+      }
+
+      >div {
+        a {
+          &:nth-of-type(1) {
+            .item {
+              background-image: linear-gradient(#ff4f38b6, #ff4f38b6),
+                url(../img/abt_1.jpeg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+
+          &:nth-of-type(2) {
+            .item {
+              background-image: linear-gradient(#ff4f38b6, #ff4f38b6),
+                url(../img/abt_1.jpeg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .jenn-con1 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    z-index: -1;
+
+    img {
+      height: 150px;
+    }
+
+    @include breakpoint($md_screen) {
+      top: 65%;
+      left: 30%;
+    }
+  }
+
+  .jenn-con14 {
+    position: absolute;
+    top: 38%;
+    left: 15%;
+    z-index: -1;
+
+    img {
+      height: 90px;
+
+      @include breakpoint($sm_screen) {
+        height: 50px;
+      }
+    }
+
+    @include breakpoint($sm_screen) {
+      top: 76%;
+      left: 1%;
+    }
+  }
+
+  .jenn-con15 {
+    position: absolute;
+    top: 43%;
+    left: 65%;
+    z-index: -1;
+
+    img {
+      height: 150px;
+
+      @include breakpoint($sm_screen) {
+        height: 60px;
+      }
+    }
+
+    @include breakpoint($sm_screen) {
+      top: 47%;
+      left: 85%;
+    }
+  }
+
+  .jenn-con16 {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    z-index: -1;
+
+    img {
+      height: 80px;
+
+      @include breakpoint($sm_screen) {
+        height: 60px;
+      }
+    }
+
+    @include breakpoint($sm_screen) {
+      top: 18%;
+      left: 72%;
+    }
+  }
+
+  .jenn-con17 {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: -1;
+
+    img {
+      height: 60px;
+    }
+
+    @include breakpoint($sm_screen) {
+      top: 8%;
+      left: 10%;
+    }
+  }
+}

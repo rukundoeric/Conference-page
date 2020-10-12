@@ -26,7 +26,7 @@
     background-image: linear-gradient(to bottom right, $color_primary 20%, #f5160607, $color_primary 50%), url(../img/image3.png);
 
     @include breakpoint($sm_screen) {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 
@@ -76,7 +76,7 @@
   z-index: -1;
 
   @include breakpoint($md_screen) {
-    top: 35%;
+    top: 40%;
     left: 60%;
   }
 
