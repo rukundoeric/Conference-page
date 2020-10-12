@@ -3,7 +3,7 @@
 #
 
 > This is an online website for buying tickets for a flagship music competition concert called Primus Guma Guma Superstar.
-> ![screenshot](./assets/img/screenshot.png)
+> ![screenshot](assets/img/screenshot.png)
 
 ## Built With
 
@@ -19,7 +19,7 @@
 
 ## Getting Started
 
-- Clone this repo https://github.com/rukundoeric/Building-with-Responsive-Design
+- Clone this repo https://github.com/rukundoeric/Conference-page/tree/conference-page
 - Navigate to project directory.
 - If you have liveserver in you vs-code, just run it.
 - Ortherwise just open index page with your browser.
