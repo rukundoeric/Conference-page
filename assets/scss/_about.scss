@@ -3,10 +3,13 @@
 
   .banner {
     .cons-title {
-      background-image: linear-gradient(to bottom right,
+      background-image:
+        linear-gradient(
+          to bottom right,
           $color_primary 100%,
           #f5160607,
-          $color_primary 50%),
+          $color_primary 50%
+        ),
         url(../img/image3.png);
     }
   }
@@ -38,27 +41,32 @@
     }
 
     .list {
+      /*stylelint-disable*/
       .item {
         box-sizing: border-box;
         width: 350px;
         height: 200px;
         padding: 2px;
 
-        @include breakpoint($sm_screen) {
-          width: 100%;
-        }
-
         h2 {
           color: $color_white;
         }
-
         p {
           color: $color_white;
         }
-      }
 
-      >div {
+        @include breakpoint($sm_screen) {
+          width: 100%;
+        }
+      }/*stylint-enable*/
+
+     > div {
         a {
+
+          @include breakpoint($sm_screen) {
+            width: 100%;
+          }
+
           &:nth-of-type(1) {
             .item {
               background-image: linear-gradient(#ff4f38b6, #ff4f38b6),
@@ -92,7 +100,12 @@
     }
 
     @include breakpoint($md_screen) {
-      top: 65%;
+      top: 55%;
+      left: 30%;
+    }
+
+    @include breakpoint($sm_screen) {
+      top: 30%;
       left: 30%;
     }
   }

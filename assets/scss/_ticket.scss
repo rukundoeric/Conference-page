@@ -1,0 +1,125 @@
+.ticket {
+  background-image: none;
+
+  .header {
+    position: relative;
+
+    h2 {
+      color: $color_text;
+      font-size: 20px;
+      font-family: $font2;
+      font-weight: 700;
+    }
+
+    .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 50px;
+      border-bottom: 3px solid $color_primary;
+    }
+  }
+
+  .ticket-type {
+    .table-container {
+      max-width: 400px;
+      background: url(../img/asset18.png);
+      background-position: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .table {
+        border: 1px solid $color_border;
+        background-color: $color_accent_1;
+        margin: 0;
+
+        td {
+          font-size: 15px;
+          font-family: $font2;
+        }
+
+        .amount {
+          font-family: $font1;
+          font-size: 15px;
+          color: $color_primary;
+        }
+      }
+    }
+  }
+
+  .sec-nav {
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: $font2;
+    border: 1px solid $color_border;
+    max-width: 400px;
+    color: $color_text;
+
+    .step {
+      color: $color_primary;
+
+      &::before {
+        display: flex;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 1px;
+        margin-right: 10px;
+        background-color: $color_primary;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .payment {
+    background-color: $color_white;
+    position: relative;
+    margin-top: 150px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .divider-cont {
+      position: absolute;
+      display: block;
+      top: -25px;
+      align-self: center;
+      left: 50%;
+      margin-left: -25px;
+      right: auto;
+      width: 50px;
+      color: $color_white;
+      height: 50px;
+      background-color: $color_primary;
+      transform: rotate(45deg);
+
+      i {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .input-group-append {
+      border-radius: 0;
+    }
+
+    .form-group {
+      span {
+        font-size: 15px;
+        font-family: $font2;
+        color: $color_text;
+        // text-transform: uppercase;
+      }
+
+      input {
+        border: 1px solid $color_border;
+        border-radius: 0;
+        height: 50px;
+      }
+    }
+
+    .apply-payment {
+      background-color: $color_primary;
+      color: $color_white;
+      border: 0;
+      font-family: $font1;
+    }
+  }
+}

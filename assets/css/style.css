@@ -33,6 +33,10 @@ a {
   a:hover {
     text-decoration: none; }
 
+input,
+button {
+  outline: none; }
+
 h1,
 h2,
 h5 {
@@ -399,26 +403,32 @@ h5 {
       margin: auto;
       width: 100px;
       border-bottom: 3px solid #ff4f38; }
-  .about .past-competiotions .list .item {
-    box-sizing: border-box;
-    width: 350px;
-    height: 200px;
-    padding: 2px; }
+  .about .past-competiotions .list {
+    /*stylelint-disable*/
+    /*stylint-enable*/ }
+    .about .past-competiotions .list .item {
+      box-sizing: border-box;
+      width: 350px;
+      height: 200px;
+      padding: 2px; }
+      .about .past-competiotions .list .item h2 {
+        color: #fff; }
+      .about .past-competiotions .list .item p {
+        color: #fff; }
+      @media (max-width: 767px) {
+        .about .past-competiotions .list .item {
+          width: 100%; } }
     @media (max-width: 767px) {
-      .about .past-competiotions .list .item {
+      .about .past-competiotions .list > div a {
         width: 100%; } }
-    .about .past-competiotions .list .item h2 {
-      color: #fff; }
-    .about .past-competiotions .list .item p {
-      color: #fff; }
-  .about .past-competiotions .list > div a:nth-of-type(1) .item {
-    background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .about .past-competiotions .list > div a:nth-of-type(2) .item {
-    background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; }
+    .about .past-competiotions .list > div a:nth-of-type(1) .item {
+      background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .about .past-competiotions .list > div a:nth-of-type(2) .item {
+      background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover; }
 .about .jenn-con1 {
   position: absolute;
   top: 45%;
@@ -428,7 +438,11 @@ h5 {
     height: 150px; }
   @media (max-width: 992px) {
     .about .jenn-con1 {
-      top: 65%;
+      top: 55%;
+      left: 30%; } }
+  @media (max-width: 767px) {
+    .about .jenn-con1 {
+      top: 30%;
       left: 30%; } }
 .about .jenn-con14 {
   position: absolute;
@@ -483,6 +497,92 @@ h5 {
     .about .jenn-con17 {
       top: 8%;
       left: 10%; } }
+
+.ticket {
+  background-image: none; }
+  .ticket .header {
+    position: relative; }
+    .ticket .header h2 {
+      color: #5e5e5e;
+      font-size: 20px;
+      font-family: lato-bold, sans-serif;
+      font-weight: 700; }
+    .ticket .header .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 50px;
+      border-bottom: 3px solid #ff4f38; }
+  .ticket .ticket-type .table-container {
+    max-width: 400px;
+    background: url(../img/asset18.png);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .ticket .ticket-type .table-container .table {
+      border: 1px solid #bbb;
+      background-color: #f7f7f7;
+      margin: 0; }
+      .ticket .ticket-type .table-container .table td {
+        font-size: 15px;
+        font-family: lato-bold, sans-serif; }
+      .ticket .ticket-type .table-container .table .amount {
+        font-family: cocogoose, sans-serif;
+        font-size: 15px;
+        color: #ff4f38; }
+  .ticket .sec-nav {
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: lato-bold, sans-serif;
+    border: 1px solid #bbb;
+    max-width: 400px;
+    color: #5e5e5e; }
+    .ticket .sec-nav .step {
+      color: #ff4f38; }
+      .ticket .sec-nav .step::before {
+        display: flex;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 1px;
+        margin-right: 10px;
+        background-color: #ff4f38;
+        transform: rotate(45deg); }
+  .ticket .payment {
+    background-color: #fff;
+    position: relative;
+    margin-top: 150px;
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    .ticket .payment .divider-cont {
+      position: absolute;
+      display: block;
+      top: -25px;
+      align-self: center;
+      left: 50%;
+      margin-left: -25px;
+      right: auto;
+      width: 50px;
+      color: #fff;
+      height: 50px;
+      background-color: #ff4f38;
+      transform: rotate(45deg); }
+      .ticket .payment .divider-cont i {
+        transform: rotate(-45deg); }
+    .ticket .payment .input-group-append {
+      border-radius: 0; }
+    .ticket .payment .form-group span {
+      font-size: 15px;
+      font-family: lato-bold, sans-serif;
+      color: #5e5e5e; }
+    .ticket .payment .form-group input {
+      border: 1px solid #bbb;
+      border-radius: 0;
+      height: 50px; }
+    .ticket .payment .apply-payment {
+      background-color: #ff4f38;
+      color: #fff;
+      border: 0;
+      font-family: cocogoose, sans-serif; }
 
 footer {
   height: 200px; }
