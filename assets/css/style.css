@@ -83,6 +83,8 @@ h5 {
         z-index: 2;
         box-shadow: 1px 0 5px 0 #a7a7a7; } }
     .nav-bar .nav-links .about {
+      color: #5e5e5e; }
+    .nav-bar .nav-links .about.active {
       color: #ff4f38; }
     .nav-bar .nav-links .ticket {
       border: 3px solid #ff4f38;

@@ -46,6 +46,10 @@
     }
 
     .about {
+      color: $color_text;
+    }
+
+    .about.active {
       color: $color_primary;
     }
 
