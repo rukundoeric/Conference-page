@@ -25,7 +25,6 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 a {
@@ -46,20 +45,17 @@ tr {
 }
 
 input,
-button {
+button,
+details,
+summary,
+ul,
+li {
+  list-style: none;
   outline: none;
-}
-
-details {
-  summary {
-    list-style: none;
-    outline: none;
-  }
 }
 
 summary::-webkit-details-marker {
   display: none;
-  outline: none;
 }
 
 h1,
