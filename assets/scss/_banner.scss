@@ -1,0 +1,217 @@
+.banner {
+  position: relative;
+  min-height: 600px;
+  overflow-x: hidden;
+
+  .container {
+    padding: 0;
+  }
+
+  .cons-msg {
+    font-family: $font3;
+    font-size: 24px;
+    color: $color_primary;
+
+    @include breakpoint($sm_screen) {
+      font-size: 15px;
+    }
+  }
+
+  .cons-title {
+    font-family: $font1;
+    font-weight: 900;
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom right, $color_primary 20%, #f5160607, $color_primary 50%), url(../img/image3.png);
+
+    @include breakpoint($sm_screen) {
+      font-size: 30px;
+    }
+  }
+
+  .cons-desc {
+    border: 6px solid $color_white;
+    width: 600px;
+    background-color: $color_accent_1;
+
+    @include breakpoint($sm_screen) {
+      width: 100%;
+    }
+
+    .cons-description {
+      font-family: $font2;
+      font-size: 15px;
+      color: $color_text;
+    }
+  }
+
+  .cons-date {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    font-family: $font1;
+    color: $color_text;
+
+    @include breakpoint($sm_screen) {
+      font-size: 20px;
+    }
+  }
+
+  .cons-location {
+    font-family: $font1;
+    color: $color_text;
+    font-size: 27px;
+
+    @include breakpoint($sm_screen) {
+      font-size: 16px;
+    }
+  }
+}
+
+.jenn-con1 {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  z-index: -1;
+
+  @include breakpoint($md_screen) {
+    top: 40%;
+    left: 60%;
+  }
+
+  img {
+    height: 150px;
+  }
+}
+
+.jenn-con2 {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  z-index: -1;
+
+  @include breakpoint($md_screen) {
+    top: 0%;
+    left: 60%;
+  }
+
+  img {
+    height: 100px;
+  }
+}
+
+.jenn-con3 {
+  position: absolute;
+  top: 45%;
+  left: 62%;
+  z-index: -1;
+
+  img {
+    height: 30px;
+  }
+}
+
+.jenn-con4 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  z-index: -1;
+
+  img {
+    height: 30px;
+  }
+}
+
+.jenn-con5 {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  z-index: -1;
+
+  img {
+    height: 30px;
+  }
+}
+
+.jenn-con6 {
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  z-index: -1;
+
+  img {
+    height: 25px;
+  }
+}
+
+.jenn-con7 {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  z-index: -1;
+
+  img {
+    height: 35px;
+  }
+}
+
+.jenn-con8 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: -1;
+
+  img {
+    height: 35px;
+  }
+}
+
+.jenn-con9 {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+  z-index: -1;
+
+  img {
+    height: 40px;
+  }
+}
+
+.jenn-con10 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  z-index: -1;
+
+  @include breakpoint($md_screen) {
+    top: 70%;
+    left: 60%;
+  }
+
+  img {
+    height: 50px;
+  }
+}
+
+.jenn-con11 {
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  z-index: -1;
+
+  img {
+    height: 30px;
+  }
+}
+
+.jenn-con12 {
+  position: absolute;
+  top: 83%;
+  left: 30%;
+  z-index: -1;
+
+  img {
+    height: 30px;
+  }
+}

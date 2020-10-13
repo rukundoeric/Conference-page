@@ -1,0 +1,23 @@
+// Main Colors => Colors which are specified in the design.
+$color_primary: #ec5242;
+$color_secondary: #272a31;
+$color_text: #5e5e5e;
+
+//Other Colors
+$color_secondary_1: #2d323a;
+$color_accent: #d3d3d3;
+$color_accent_1: #f7f7f7;
+$color_border: #bbb;
+$color_white: #fff;
+
+// Fonts
+$font1: cocogoose, sans-serif;
+$font2: lato-bold, sans-serif;
+$font3: lato_regular, sans-serif;
+
+// Screen breakpoints
+$lg_screen: "(min-width: 992px)";
+$md_min_screen: "(min-width: 767)";
+$md_screen: "(max-width: 992px)";
+$sm_screen: "(max-width: 767px)";
+$xs_screen: "(max-width: 576px)";

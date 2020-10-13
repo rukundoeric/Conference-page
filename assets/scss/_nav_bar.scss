@@ -1,0 +1,100 @@
+.nav-bar {
+  clear: both;
+  background-color: transparent;
+  background-color: $color_white;
+  box-shadow: 7px 0 9px 0 rgba(168, 168, 168, 0.76);
+
+  @include breakpoint($sm_screen) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .status-bar {
+    background-color: $color_secondary;
+    box-sizing: border-box;
+    position: relative;
+
+    ul {
+      right: 0;
+
+      li {
+        padding: 0;
+        margin-top: 0;
+
+        a {
+          color: $color_accent;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    position: relative;
+
+    @include breakpoint($sm_screen) {
+      background-color: $color_white;
+      width: 300px;
+      top: 40px;
+      padding: 20px 0;
+      margin-top: 20px;
+      display: none;
+      position: absolute;
+      z-index: 2;
+      box-shadow: 1px 0 5px 0 rgb(167, 167, 167);
+    }
+
+    .about {
+      color: $color_text;
+    }
+
+    .about.active {
+      color: $color_primary;
+    }
+
+    .ticket {
+      border: 3px solid $color_primary;
+      color: $color_primary;
+
+      a {
+        color: $color_primary;
+        text-transform: uppercase;
+        font-family: $font1;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .nav-links.active {
+    @include breakpoint($sm_screen) {
+      display: flex;
+    }
+  }
+
+  .logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  .nav-button-icon {
+    width: 30px;
+    cursor: pointer;
+
+    &::after,
+    &::before,
+    .btn-cont {
+      background-color: $color_text;
+      // border-radius: 10px;
+      content: "";
+      display: block;
+      height: 4px;
+      margin: 6px 0;
+    }
+
+    &:hover::before::after {
+      background-color: $color_secondary;
+    }
+  }
+}

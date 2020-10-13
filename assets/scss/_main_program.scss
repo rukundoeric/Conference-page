@@ -1,0 +1,75 @@
+.main-program {
+  background-image: url(../img/bg_asset.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    padding: 0;
+  }
+
+  .header {
+    position: relative;
+
+    h1 {
+      color: $color_accent;
+      font-size: 20px;
+      font-family: $font1;
+      font-weight: 700;
+    }
+
+    .small-line {
+      justify-self: center;
+      margin: auto;
+      width: 100px;
+      border-bottom: 3px solid $color_primary;
+    }
+  }
+
+  .program-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    @include breakpoint($md_screen) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint($sm_screen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+      background-color: rgba(255, 255, 255, 0.103);
+
+      .icon {
+        height: 50px;
+      }
+
+      h4 {
+        color: $color_primary;
+        font-family: $font1;
+        font-size: 15px;
+      }
+
+      p {
+        color: $color_accent_1;
+        font-family: $font3;
+        font-size: 15px;
+      }
+
+      .row {
+        @include breakpoint($xs_screen) {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+      }
+    }
+  }
+
+  .buy-ticket {
+    text-transform: uppercase;
+    background-color: $color_primary;
+    color: $color_white;
+    width: 100%;
+  }
+}
