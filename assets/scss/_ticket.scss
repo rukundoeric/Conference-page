@@ -4,7 +4,7 @@
   .header {
     position: relative;
 
-    h2 {
+    h1 {
       color: $color_text;
       font-size: 20px;
       font-family: $font2;
@@ -70,7 +70,7 @@
     }
   }
 
-  .payment {
+  .lunch {
     background-color: $color_white;
     position: relative;
     margin-top: 150px;
@@ -96,23 +96,18 @@
       }
     }
 
-    .input-group-append {
-      border-radius: 0;
+    .lunch-table {
+      border: 1px solid $color_border;
+      font-family: $font2;
+      font-size: 15px;
+      color: $color_text;
     }
 
-    .form-group {
-      span {
-        font-size: 15px;
-        font-family: $font2;
-        color: $color_text;
-        // text-transform: uppercase;
-      }
-
-      input {
-        border: 1px solid $color_border;
-        border-radius: 0;
-        height: 50px;
-      }
+    th {
+      background-color: $color_accent_1;
+      font-family: $font1;
+      font-size: 15px;
+      color: $color_text;
     }
 
     .apply-payment {

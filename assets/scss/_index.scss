@@ -38,8 +38,27 @@ a {
   }
 }
 
+td,
+thead,
+th,
+tr {
+  border: 0 !important;
+}
+
 input,
 button {
+  outline: none;
+}
+
+details {
+  summary {
+    list-style: none;
+    outline: none;
+  }
+}
+
+summary::-webkit-details-marker {
+  display: none;
   outline: none;
 }
 

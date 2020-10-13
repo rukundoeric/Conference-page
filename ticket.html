@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/bootstrap.css" />
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-   <!-- fontawesome script -->
-    <script
+  <!-- fontawesome script -->
+  <script
       src="https://kit.fontawesome.com/2bce053742.js"
       crossorigin="anonymous"
     ></script>
@@ -50,9 +50,9 @@
     </div>
   </nav>
 
-  <div class="ticket-type my-5 py-2 pb-2">
+  <section class="ticket-type my-5 py-2 pb-2">
     <div class="header text-center mb-4">
-      <h2>Select Ticket</h2>
+      <h1>Select Ticket</h1>
       <div class="small-line pt-3"></div>
     </div>
 
@@ -86,64 +86,65 @@
         </table>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="payment">
+  <section class="lunch">
     <div class="divider-cont d-flex justify-content-center align-items-center"><i class="fas fa-chevron-down"></i></div>
     <div class="header text-center mb-4">
-      <h2>Payment</h2>
+      <h1>Select Your Lunch</h1>
       <div class="small-line pt-3"></div>
     </div>
 
     <div class="d-flex justify-content-center align-items-center">
       <div class="sec-nav py-3 px-4 d-flex">
-        <span class="step mr-3 d-flex align-items-center">STEP 2</span>&nbsp;&nbsp;Confirm Payment
+        <span class="step mr-3 d-flex align-items-center">STEP 2</span>&nbsp;&nbsp;Please Select Your Lunch.
       </div>
     </div>
 
     <div class="d-flex justify-content-center align-items-center">
       <div class="pt-3 p-3">
-        <form>
-          <div class="form-group">
-            <span>Full Name</span>
-            <input  type="text" name="username" placeholder="Name" required class="form-control mt-2">
-          </div>
-          <div class="form-group py-2"> 
-            <span>Card number</span>
-            <div class="input-group mt-2">
-              <input  type="text" name="cardNumber" placeholder="Card Number" class="form-control " required>
-              <div class="input-group-append rounded-0">
-                <span class="input-group-text text-muted">
-                  <i class="fa fa-cc-visa mx-1"></i>
-                  <i class="fab fa-cc-mastercard mx-1"></i>
-                  <i class="fab fa-cc-amex mx-1"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-8">
-              <div class="form-group py-2"><span>Expiration Date</span>
-                <div class="input-group">
-                  <input type="number" placeholder="MM" name="date-c" class="form-control mt-2 pl-2" required />
-                  <input type="number" placeholder="YY" name="date-c-1" class="form-control mt-2 pl-2" required />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="form-group mb-4 py-2 d-flex flex-column">
-                <span>CVV</span>
-                <input type="text" required class="form-control mt-2 pl-2">
-              </div>
-            </div>
-          </div>
-          <div>
-            <button type="button" class="py-3 apply-payment btn-primary btn-block shadow-sm"> Confirm Payment </button>
-          </div>
-        </form>
+        <div class="table">
+          <table class="lunch-table my-5">
+            <thead>
+              <tr>
+                <th colspan="5" class="d-flex justify-content-center">Select Lunch Menu</th>
+              </tr>
+            </thead>
+            <tbody class="py-3 my-2">
+              <tr class="d-flex flex-wrap">
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;1&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;2&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;3&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;4&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;5&nbsp;<input type="radio"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table">
+          <table class="lunch-table my-5">
+            <thead>
+              <tr>
+                <th colspan="5" class="d-flex justify-content-center">Select Lunch Menu 2</th>
+              </tr>
+            </thead>
+            <tbody class="py-3 my-2">
+              <tr class="d-flex flex-wrap">
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;1&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;2&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;3&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;4&nbsp;<input type="radio"></td>
+                <td class="mx-5 d-flex py-4 align-items-center">menu&nbsp;5&nbsp;<input type="radio"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <button type="button" class="py-3 apply-payment btn-primary btn-block shadow-sm"> Save & Continue to payment </button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <footer>
     <div class="container">

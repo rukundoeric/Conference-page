@@ -33,8 +33,22 @@ a {
   a:hover {
     text-decoration: none; }
 
+td,
+thead,
+th,
+tr {
+  border: 0 !important; }
+
 input,
 button {
+  outline: none; }
+
+details summary {
+  list-style: none;
+  outline: none; }
+
+summary::-webkit-details-marker {
+  display: none;
   outline: none; }
 
 h1,
@@ -85,12 +99,12 @@ h5 {
     .nav-bar .nav-links .about {
       color: #5e5e5e; }
     .nav-bar .nav-links .about.active {
-      color: #ff4f38; }
+      color: #ec5242; }
     .nav-bar .nav-links .ticket {
-      border: 3px solid #ff4f38;
-      color: #ff4f38; }
+      border: 3px solid #ec5242;
+      color: #ec5242; }
       .nav-bar .nav-links .ticket a {
-        color: #ff4f38;
+        color: #ec5242;
         text-transform: uppercase;
         font-family: cocogoose, sans-serif;
         font-weight: 600; }
@@ -121,7 +135,7 @@ h5 {
   .banner .cons-msg {
     font-family: lato_regular, sans-serif;
     font-size: 24px;
-    color: #ff4f38; }
+    color: #ec5242; }
     @media (max-width: 767px) {
       .banner .cons-msg {
         font-size: 15px; } }
@@ -131,7 +145,7 @@ h5 {
     font-size: 50px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to bottom right, #ff4f38 20%, #f5160607, #ff4f38 50%), url(../img/image3.png); }
+    background-image: linear-gradient(to bottom right, #ec5242 20%, #f5160607, #ec5242 50%), url(../img/image3.png); }
     @media (max-width: 767px) {
       .banner .cons-title {
         font-size: 30px; } }
@@ -279,7 +293,7 @@ h5 {
     padding: 0; }
   .main-program .header {
     position: relative; }
-    .main-program .header h2 {
+    .main-program .header h1 {
       color: #d3d3d3;
       font-size: 20px;
       font-family: cocogoose, sans-serif;
@@ -288,7 +302,7 @@ h5 {
       justify-self: center;
       margin: auto;
       width: 100px;
-      border-bottom: 3px solid #ff4f38; }
+      border-bottom: 3px solid #ec5242; }
   .main-program .program-list {
     width: 100%;
     display: grid;
@@ -304,7 +318,7 @@ h5 {
       .main-program .program-list .item .icon {
         height: 50px; }
       .main-program .program-list .item h4 {
-        color: #ff4f38;
+        color: #ec5242;
         font-family: cocogoose, sans-serif;
         font-size: 15px; }
       .main-program .program-list .item p {
@@ -317,13 +331,13 @@ h5 {
           grid-template-columns: 50% 50%; } }
   .main-program .buy-ticket {
     text-transform: uppercase;
-    background-color: #ff4f38;
+    background-color: #ec5242;
     color: #fff;
     width: 100%; }
 
 .contestants .header {
   position: relative; }
-  .contestants .header h2 {
+  .contestants .header h1 {
     color: #272a31;
     font-size: 20px;
     font-family: cocogoose, sans-serif;
@@ -332,7 +346,7 @@ h5 {
     justify-self: center;
     margin: auto;
     width: 100px;
-    border-bottom: 3px solid #ff4f38; }
+    border-bottom: 3px solid #ec5242; }
 .contestants .item {
   box-sizing: border-box;
   padding: 0; }
@@ -360,7 +374,7 @@ h5 {
       width: 20px;
       border-bottom: 2px solid #bbb; }
     .contestants .item .cont-info small {
-      color: #ff4f38; }
+      color: #ec5242; }
     .contestants .item .cont-info p {
       font-size: 12px;
       font-family: lato-bold, sans-serif;
@@ -379,7 +393,7 @@ h5 {
       justify-self: center;
       margin: auto;
       width: 30px;
-      border-bottom: 3px solid #ff4f38; }
+      border-bottom: 3px solid #ec5242; }
   .partner .p-logo {
     height: 50px; }
     @media (max-width: 767px) {
@@ -387,7 +401,7 @@ h5 {
         height: 20px; } }
 
 .about .banner .cons-title {
-  background-image: linear-gradient(to bottom right, #ff4f38 100%, #f5160607, #ff4f38 50%), url(../img/image3.png); }
+  background-image: linear-gradient(to bottom right, #ec5242 100%, #f5160607, #ec5242 50%), url(../img/image3.png); }
 .about .cons-desc {
   background-color: #fff;
   border-color: #d3d3d3; }
@@ -395,7 +409,7 @@ h5 {
   background-color: #fff; }
   .about .past-competiotions .header {
     position: relative; }
-    .about .past-competiotions .header h2 {
+    .about .past-competiotions .header h1 {
       color: #272a31;
       font-size: 20px;
       font-family: lato-bold, sans-serif;
@@ -404,33 +418,26 @@ h5 {
       justify-self: center;
       margin: auto;
       width: 100px;
-      border-bottom: 3px solid #ff4f38; }
-  .about .past-competiotions .list {
-    /*stylelint-disable*/
-    /*stylint-enable*/ }
-    .about .past-competiotions .list .item {
-      box-sizing: border-box;
-      width: 350px;
-      height: 200px;
-      padding: 2px; }
-      .about .past-competiotions .list .item h2 {
-        color: #fff; }
-      .about .past-competiotions .list .item p {
-        color: #fff; }
-      @media (max-width: 767px) {
-        .about .past-competiotions .list .item {
-          width: 100%; } }
+      border-bottom: 3px solid #ec5242; }
+  .about .past-competiotions .list .item {
+    box-sizing: border-box;
+    width: 350px;
+    height: 200px; }
+    .about .past-competiotions .list .item h2 {
+      color: #fff; }
+    .about .past-competiotions .list .item p {
+      color: #fff; }
     @media (max-width: 767px) {
-      .about .past-competiotions .list > div a {
+      .about .past-competiotions .list .item {
         width: 100%; } }
-    .about .past-competiotions .list > div a:nth-of-type(1) .item {
-      background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .about .past-competiotions .list > div a:nth-of-type(2) .item {
-      background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover; }
+  .about .past-competiotions .list .items .item1 {
+    background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .about .past-competiotions .list .items .item2 {
+    background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; }
 .about .jenn-con1 {
   position: absolute;
   top: 45%;
@@ -504,7 +511,7 @@ h5 {
   background-image: none; }
   .ticket .header {
     position: relative; }
-    .ticket .header h2 {
+    .ticket .header h1 {
       color: #5e5e5e;
       font-size: 20px;
       font-family: lato-bold, sans-serif;
@@ -513,7 +520,7 @@ h5 {
       justify-self: center;
       margin: auto;
       width: 50px;
-      border-bottom: 3px solid #ff4f38; }
+      border-bottom: 3px solid #ec5242; }
   .ticket .ticket-type .table-container {
     max-width: 400px;
     background: url(../img/asset18.png);
@@ -530,7 +537,7 @@ h5 {
       .ticket .ticket-type .table-container .table .amount {
         font-family: cocogoose, sans-serif;
         font-size: 15px;
-        color: #ff4f38; }
+        color: #ec5242; }
   .ticket .sec-nav {
     cursor: pointer;
     border-radius: 50px;
@@ -539,7 +546,7 @@ h5 {
     max-width: 400px;
     color: #5e5e5e; }
     .ticket .sec-nav .step {
-      color: #ff4f38; }
+      color: #ec5242; }
       .ticket .sec-nav .step::before {
         display: flex;
         content: "";
@@ -547,15 +554,15 @@ h5 {
         width: 8px;
         border-radius: 1px;
         margin-right: 10px;
-        background-color: #ff4f38;
+        background-color: #ec5242;
         transform: rotate(45deg); }
-  .ticket .payment {
+  .ticket .lunch {
     background-color: #fff;
     position: relative;
     margin-top: 150px;
     padding-top: 80px;
     padding-bottom: 80px; }
-    .ticket .payment .divider-cont {
+    .ticket .lunch .divider-cont {
       position: absolute;
       display: block;
       top: -25px;
@@ -566,22 +573,22 @@ h5 {
       width: 50px;
       color: #fff;
       height: 50px;
-      background-color: #ff4f38;
+      background-color: #ec5242;
       transform: rotate(45deg); }
-      .ticket .payment .divider-cont i {
+      .ticket .lunch .divider-cont i {
         transform: rotate(-45deg); }
-    .ticket .payment .input-group-append {
-      border-radius: 0; }
-    .ticket .payment .form-group span {
-      font-size: 15px;
-      font-family: lato-bold, sans-serif;
-      color: #5e5e5e; }
-    .ticket .payment .form-group input {
+    .ticket .lunch .lunch-table {
       border: 1px solid #bbb;
-      border-radius: 0;
-      height: 50px; }
-    .ticket .payment .apply-payment {
-      background-color: #ff4f38;
+      font-family: lato-bold, sans-serif;
+      font-size: 15px;
+      color: #5e5e5e; }
+    .ticket .lunch th {
+      background-color: #f7f7f7;
+      font-family: cocogoose, sans-serif;
+      font-size: 15px;
+      color: #5e5e5e; }
+    .ticket .lunch .apply-payment {
+      background-color: #ec5242;
       color: #fff;
       border: 0;
       font-family: cocogoose, sans-serif; }

@@ -25,7 +25,7 @@
     .header {
       position: relative;
 
-      h2 {
+      h1 {
         color: $color_secondary;
         font-size: 20px;
         font-family: $font2;
@@ -41,16 +41,15 @@
     }
 
     .list {
-      /*stylelint-disable*/
       .item {
         box-sizing: border-box;
         width: 350px;
         height: 200px;
-        padding: 2px;
 
         h2 {
           color: $color_white;
         }
+
         p {
           color: $color_white;
         }
@@ -58,32 +57,19 @@
         @include breakpoint($sm_screen) {
           width: 100%;
         }
-      }/*stylint-enable*/
+      }
 
-     > div {
-        a {
+      .items {
+        .item1 {
+          background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
 
-          @include breakpoint($sm_screen) {
-            width: 100%;
-          }
-
-          &:nth-of-type(1) {
-            .item {
-              background-image: linear-gradient(#ff4f38b6, #ff4f38b6),
-                url(../img/abt_1.jpeg);
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-          }
-
-          &:nth-of-type(2) {
-            .item {
-              background-image: linear-gradient(#ff4f38b6, #ff4f38b6),
-                url(../img/abt_1.jpeg);
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-          }
+        .item2 {
+          background-image: linear-gradient(#ff4f38b6, #ff4f38b6), url(../img/abt_1.jpeg);
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       }
     }
